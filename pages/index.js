@@ -33,9 +33,7 @@ export default function Home() {
                 <Skills />
             </section>
 
-            {/* Project */}
-
-            {/* Contact */}
+            
         </div>
     );
 }
