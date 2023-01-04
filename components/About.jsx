@@ -28,10 +28,11 @@ export default function About() {
                     background
                 </h4>
                 <p className="text-base">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quasi, numquam pariatur minus excepturi quidem eius
-                    blanditiis id nulla similique nesciunt ullam sapiente
-                    adipisci placeat ad sunt? Nemo saepe ducimus asperiores.
+                    I am about to turn 40 and am trying to restructure my career
+                    by acquiring IT skills. I used to work for one of the
+                    largest auto parts manufacturers in the industry, but was
+                    greatly influenced by Linda Gratton's "LIFE SHIFT" and felt
+                    the need to restructure my career for a multi-stage life.
                 </p>
             </div>
         </div>
