@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function About() {
     return (
-        <div className="h-screen flex flex-col relative text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
+        <div className="h-screen flex flex-col relative text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center snap-center">
             <h3 className="md:absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl mt-10 md:mt-0">
                 About
             </h3>
@@ -31,8 +31,9 @@ export default function About() {
                     I am about to turn 40 and am trying to restructure my career
                     by acquiring IT skills. I used to work for one of the
                     largest auto parts manufacturers in the industry, but was
-                    greatly influenced by Linda Gratton's "LIFE SHIFT" and felt
-                    the need to restructure my career for a multi-stage life.
+                    greatly influenced by Linda Gratton&apos;s &quot;LIFE
+                    SHIFT&quot; and felt the need to restructure my career for a
+                    multi-stage life.
                 </p>
             </div>
         </div>
