@@ -53,11 +53,6 @@ export default function Home() {
                             src="http://www.yncode-web.com/images/favicon-logo.png"
                             alt=""
                         />
-                        {/* <Image
-                            src="http://www.yncode-web.com/images/favicon-logo.png"
-                            width={40}
-                            height={40}
-                        /> */}
                     </div>
                 </footer>
             </Link>
