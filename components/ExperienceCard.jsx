@@ -12,7 +12,7 @@ export default function ExperienceCard() {
             >
                 <Image
                     className="w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center"
-                    src="/スクリーンショット 2023-01-02 17.50.18.png"
+                    src="/スクリーンショット 2023-01-10 13.13.31.png"
                     alt=""
                     width={100}
                     height={100}
@@ -39,7 +39,9 @@ export default function ExperienceCard() {
                         alt=""
                     />
                 </div>
-                <p className="uppercase py-5 text-gray-300">Started work... - Ended...</p>
+                <p className="uppercase py-5 text-gray-300">
+                    Started work... - Ended...
+                </p>
 
                 <ul className="list-disc space-y-4 ml-5 text-lg">
                     <li>Summary points</li>
