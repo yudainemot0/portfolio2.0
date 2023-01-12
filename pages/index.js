@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
     return (
-        <div className="bg-[rgb(36,36,36)] text-white h-screen snap-proximity snap-y overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/50">
+        <div className="bg-[rgb(36,36,36)] text-white h-screen snap-mandatory snap-y overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/50">
             <Head>
                 <title>Dai&apos;s portfolio</title>
             </Head>
@@ -45,8 +45,8 @@ export default function Home() {
             </section>
 
             <Link href="#hero">
-                <footer className="sticky bottom-5 w-full cursor-pointer">
-                    <div className="flex justify-center items-center">
+                <footer className="relative w-full cursor-pointer">
+                    <div className="fixed bottom-7 right-12">
                         <img
                             className="w-10 h-10 bg-white rounded-md cursor-pointer"
                             src="http://www.yncode-web.com/images/favicon-logo.png"
