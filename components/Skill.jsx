@@ -44,7 +44,7 @@ export default function Skill() {
     return (
         <>
             {SKILLS.map((skill, i) => (
-                <div className="group relative flex cursor-pointer">
+                <div key={i} className="group relative flex cursor-pointer">
                     <motion.div
                         initial={{
                             opacity: 0,
