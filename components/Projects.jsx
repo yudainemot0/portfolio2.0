@@ -58,7 +58,6 @@ export default function Projects() {
                             transition={{ duration: 1.2 }}
                             viewport={{ once: true }}
                             src={project.src}
-                            // src="http://www.yncode-web.com/images/todays_task.png"
                             alt=""
                         />
 
@@ -67,16 +66,10 @@ export default function Projects() {
                                 <span className="underline decoration-[#F7AB0A]/50">
                                     Case Study {i + 1} of {PROJECTS.length}:
                                 </span>{" "}
-                                {/* Today&apos;s Task */}
                                 {project.title}
                             </h4>
 
                             <p className="text-lg text-center md:text-left">
-                                {/* This application was created to learn Laravel.
-                                Login authentication is implemented using
-                                breeze. This is my first application that I
-                                built when I was still a beginner. I remember it
-                                was very difficult. */}
                                 {project.description}
                             </p>
                         </div>
@@ -88,6 +81,3 @@ export default function Projects() {
         </motion.div>
     );
 }
-
-// http://www.yncode-web.com/images/work1.png
-// http://www.yncode-web.com/images/work2.png
