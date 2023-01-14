@@ -94,8 +94,9 @@ export default function ExperienceCard() {
                             {experience.title}
                         </p>
                         <div className="flex justify-center gap-1 space-x-2 my-2">
-                            {experience.technologies.map((technology) => (
+                            {experience.technologies.map((technology, i) => (
                                 <Image
+                                    key={i}
                                     className="h-6 w-6"
                                     src={technology}
                                     width={100}
