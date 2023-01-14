@@ -19,6 +19,10 @@ const SKILLS = [
         percentage: "40%",
     },
     {
+        src: "/jQuery.png",
+        percentage: "40%",
+    },
+    {
         src: "/Next.js.png",
         percentage: "35%",
     },
@@ -31,12 +35,20 @@ const SKILLS = [
         percentage: "30%",
     },
     {
+        src: "/WordPress.png",
+        percentage: "40%",
+    },
+    {
         src: "/github.png",
         percentage: "30%",
     },
     {
-        src: "/Visual_Studio_code.png",
+        src: "/VSCode.png",
         percentage: "50%",
+    },
+    {
+        src: "/Metamask.png",
+        percentage: "10%",
     },
 ];
 
