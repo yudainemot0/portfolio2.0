@@ -22,7 +22,7 @@ export default function Hero() {
             <BackgroundCircles />
             <Image
                 className="relative rounded-full h-32 w-32 mx-auto object-cover"
-                src="/スクリーンショット 2022-12-31 23.35.05.png"
+                src="/Myshot.png"
                 alt=""
                 width={100}
                 height={100}

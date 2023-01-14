@@ -1,55 +1,131 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+const EXPERIENCNES = [
+    {
+        job: "e-commerce website development",
+        title: "MrMax",
+        src: "/MrMax.png",
+        technologies: [
+            "/windows.png",
+            "/Excel.png",
+            "/Canon.png",
+            "/Gimp.png",
+            "/figma.png",
+        ],
+        description: "2022-",
+        summary:
+            "I am currently working at MrMax, where I am responsible for taking product photos and editing images for our e-commerce website. I am also interested in working on creating website pages in the future and I believe I possess the necessary skills to do so. To demonstrate this, I plan to present a portfolio during our interview.",
+    },
+    {
+        job: "Web site development",
+        title: "Portfolio",
+        src: "/Myshot.png",
+        technologies: [
+            "/html-icon.png",
+            "/Tailwindcss.png",
+            "/javascript-icon.png",
+            "/Next.js.png",
+            "/github.png",
+        ],
+        description: "2023-",
+        summary:
+            "This is a website for a surf shop run by a friend that I am currently creating. I am using WordPress to develop it. The only remaining tasks are to replace the images and complete the process of publishing it to a rental server, so it can be considered almost complete.",
+    },
+    {
+        job: "Web Developer",
+        title: "YNCode",
+        src: "/YNCode.png",
+        technologies: [
+            "/html-icon.png",
+            "/css-icon.png",
+            "/javascript-icon.png",
+            "/jQuery.png",
+            "/github.png",
+        ],
+        description: "2022-",
+        summary:
+            "This is work that I am doing personally. As part of my programming learning, I am creating a website for a friend. I would appreciate it if you could give me feedback.",
+    },
+    {
+        job: "Web site development",
+        title: "JamSurf",
+        src: "/JamSurf.png",
+        technologies: [
+            "/html-icon.png",
+            "/css-icon.png",
+            "/jQuery.png",
+            "/WordPress.png",
+        ],
+        description: "2022-",
+        summary:
+            "This is a website for a surf shop run by a friend that I am currently creating. I am using WordPress to develop it. The only remaining tasks are to replace the images and complete the process of publishing it to a rental server, so it can be considered almost complete.",
+    },
+];
+
 export default function ExperienceCard() {
     return (
-        <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
-            <motion.div
-                initial={{ y: -100, opacity: 0 }}
-                transition={{ duration: 1.2 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-            >
-                <Image
-                    className="w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center"
-                    src="/スクリーンショット 2023-01-10 13.13.31.png"
-                    alt=""
-                    width={100}
-                    height={100}
-                />
-            </motion.div>
+        <>
+            {EXPERIENCNES.map((experience, i) => (
+                <article
+                    key={i}
+                    className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden"
+                >
+                    <motion.div
+                        initial={{ y: -100, opacity: 0 }}
+                        transition={{ duration: 1.2 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                    >
+                        <Image
+                            className="w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center"
+                            src={experience.src}
+                            alt=""
+                            width={100}
+                            height={100}
+                        />
+                    </motion.div>
 
-            <div className="px-0 md:px-10">
-                <h4 className="text-4xl font-light">Web Developer</h4>
-                <p className="font-bold text-2xl mt-1">YNCode</p>
-                <div className="flex gap-1 space-x-2 my-2">
-                    <img
-                        className="h-6 w-6"
-                        src="https://www.freepnglogos.com/uploads/javascript-png/js-logo-png-5.png"
-                        alt=""
-                    />
-                    <img
-                        className="h-6 w-6"
-                        src="https://www.freepnglogos.com/uploads/javascript-png/js-logo-png-5.png"
-                        alt=""
-                    />
-                    <img
-                        className="h-6 w-6"
-                        src="https://www.freepnglogos.com/uploads/javascript-png/js-logo-png-5.png"
-                        alt=""
-                    />
-                </div>
-                <p className="uppercase py-5 text-gray-300">
-                    Started work... - Ended...
-                </p>
+                    <div className="px-0 md:px-10">
+                        <h4 className="text-center text-4xl font-light">
+                            {experience.job}
+                        </h4>
+                        <p className="text-center font-bold text-2xl mt-1">
+                            {experience.title}
+                        </p>
+                        <div className="flex justify-center gap-1 space-x-2 my-2">
+                            {experience.technologies.map((technology) => (
+                                <Image
+                                    className="h-6 w-6"
+                                    src={technology}
+                                    width={100}
+                                    height={100}
+                                />
+                            ))}
 
-                <ul className="list-disc space-y-4 ml-5 text-lg">
-                    <li>Summary points</li>
-                    <li>Summary points</li>
-                    <li>Summary points</li>
-                    <li>Summary points</li>
-                </ul>
-            </div>
-        </article>
+                            {/* <Image
+                                className="h-6 w-6"
+                                src="/css-icon.png"
+                                width={100}
+                                height={100}
+                            />
+                            <Image
+                                className="h-6 w-6"
+                                src="/javascript-icon.png"
+                                width={100}
+                                height={100}
+                            /> */}
+                        </div>
+                        <p className="uppercase py-5 text-gray-300">
+                            {experience.description}
+                        </p>
+
+                        <ul className="list-disc space-y-4 ml-5 text-lg">
+                            {experience.summary}
+                        </ul>
+                    </div>
+                </article>
+            ))}
+        </>
     );
 }
