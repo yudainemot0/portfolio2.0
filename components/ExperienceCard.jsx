@@ -50,7 +50,7 @@ const EXPERIENCNES = [
     {
         job: "Web site development",
         title: "JamSurf",
-        src: "/Jamsurf.png",
+        src: "/JamSurf.png",
         technologies: [
             "/html-icon.png",
             "/css-icon.png",
