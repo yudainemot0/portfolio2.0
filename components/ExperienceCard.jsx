@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const EXPERIENCNES = [
     {
-        job: "e-commerce website development",
+        job: "EC-website development",
         title: "MrMax",
         src: "/MrMax.png",
         technologies: [
@@ -50,7 +50,7 @@ const EXPERIENCNES = [
     {
         job: "Web site development",
         title: "JamSurf",
-        src: "/JamSurf.png",
+        src: "/Jamsurf.png",
         technologies: [
             "/html-icon.png",
             "/css-icon.png",
@@ -69,7 +69,7 @@ export default function ExperienceCard() {
             {EXPERIENCNES.map((experience, i) => (
                 <article
                     key={i}
-                    className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden"
+                    className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[400px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-3 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden min-h-[650px]"
                 >
                     <motion.div
                         initial={{ y: -100, opacity: 0 }}
@@ -103,19 +103,6 @@ export default function ExperienceCard() {
                                     height={100}
                                 />
                             ))}
-
-                            {/* <Image
-                                className="h-6 w-6"
-                                src="/css-icon.png"
-                                width={100}
-                                height={100}
-                            />
-                            <Image
-                                className="h-6 w-6"
-                                src="/javascript-icon.png"
-                                width={100}
-                                height={100}
-                            /> */}
                         </div>
                         <p className="uppercase py-5 text-gray-300">
                             {experience.description}
