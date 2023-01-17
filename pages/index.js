@@ -46,7 +46,7 @@ export default function Home() {
 
             <Link href="#hero">
                 <footer className="relative w-full cursor-pointer">
-                    <div className="fixed bottom-7 right-12">
+                    <div className="fixed bottom-7 right-4 md:right-12">
                         <img
                             className="w-10 h-10 bg-white rounded-md cursor-pointer"
                             src="http://www.yncode-web.com/images/favicon-logo.png"
