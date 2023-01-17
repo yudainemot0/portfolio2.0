@@ -15,7 +15,7 @@ const EXPERIENCNES = [
         ],
         description: "2022-",
         summary:
-            "I am currently working at MrMax, where I am responsible for taking product photos and editing images for our e-commerce website. I am also interested in working on creating website pages in the future and I believe I possess the necessary skills to do so. To demonstrate this, I plan to present a portfolio during our interview.",
+            "I am currently working at MrMax, where I am responsible for taking product photos and editing images for our e-commerce website. I am also interested in working on creating website pages in the future and I believe I possess the necessary skills to do so. To demonstrate this, I am creating a portfolio.",
     },
     {
         job: "Web site development",
@@ -69,7 +69,7 @@ export default function ExperienceCard() {
             {EXPERIENCNES.map((experience, i) => (
                 <article
                     key={i}
-                    className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[400px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-3 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden min-h-[650px]"
+                    className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[400px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-3 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden"
                 >
                     <motion.div
                         initial={{ y: -100, opacity: 0 }}
