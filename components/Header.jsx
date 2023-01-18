@@ -30,12 +30,12 @@ export default function Header() {
                     bgColor="transparent"
                 />
                 <SocialIcon
-                    url="https://www.instagram.com/yudainemoto410/"
+                    url="https://twitter.com/YN_Code"
                     fgColor="gray"
                     bgColor="transparent"
                 />
                 <SocialIcon
-                    url="https://www.instagram.com/yudainemoto410/"
+                    url="https://github.com/yudainemot0"
                     fgColor="gray"
                     bgColor="transparent"
                 />
