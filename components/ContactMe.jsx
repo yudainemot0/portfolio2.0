@@ -53,7 +53,7 @@ export default function ContactMe() {
 
                 <form
                     onSubmit={handleSubmit(onSubmit)}
-                    className="flex flex-col space-y-2 w-fit mx-auto"
+                    className="flex flex-col space-y-2 w-fit mx-8 sm:mx-auto"
                 >
                     <div className="flex space-x-2">
                         <input
