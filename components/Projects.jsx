@@ -35,7 +35,6 @@ const PROJECTS = [
 ];
 
 export default function Projects() {
-    
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -53,21 +52,17 @@ export default function Projects() {
                         key={i}
                         className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-4 md:p-44 h-screen"
                     >
-                        {/* <motion.img
-                            initial={{ y: -300, opacity: 0 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1.2 }}
-                            viewport={{ once: true }}
-                            src={project.src}
-                            alt=""
-                        /> */}
                         <motion.div
                             initial={{ y: -100, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 1.2 }}
                             viewport={{ once: true }}
                         >
-                            <Image src={project.src} width={900} height={100} />
+                            <Image
+                                src={project.src}
+                                width={700}
+                                height={100}
+                            />
                         </motion.div>
 
                         <div className="space-y-10 px-0 md:px-10 max-w-6xl">
